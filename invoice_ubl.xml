@@ -20,7 +20,7 @@
     <cac:AccountingSupplierParty>
         <cac:Party>
             <cac:PartyName>
-                <cbc:Name>TK</cbc:Name>
+                <cbc:Name>WillmanTech S.L.</cbc:Name>
             </cac:PartyName>
             <cac:PostalAddress>
                 <cac:Country>
@@ -28,7 +28,7 @@
                 </cac:Country>
             </cac:PostalAddress>
             <cac:Contact>
-                <cbc:Name>TK</cbc:Name>
+                <cbc:Name>WillmanTech S.L.</cbc:Name>
             </cac:Contact>
         </cac:Party>
     </cac:AccountingSupplierParty>
