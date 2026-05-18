@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" 
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+         xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+    
+    <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+    <cbc:ID>INV/2026/00001</cbc:ID>
+    <cbc:IssueDate>2026-05-07</cbc:IssueDate>
+    <cbc:DueDate>2026-05-07</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:DocumentCurrencyCode>USD</cbc:DocumentCurrencyCode>
+    
+    <cac:OrderReference>
+        <cbc:ID>S00001</cbc:ID>
+        <cbc:SalesOrderID>S00001</cbc:SalesOrderID>
+    </cac:OrderReference>
+    
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cac:PartyName>
+                <cbc:Name>TK</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cac:Country>
+                    <cbc:IdentificationCode>US</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:Contact>
+                <cbc:Name>TK</cbc:Name>
+            </cac:Contact>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+    
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cac:PartyName>
+                <cbc:Name>Pedro Sánchez</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:CityName>Murcia</cbc:CityName>
+                <cac:Country>
+                    <cbc:IdentificationCode>ES</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:Contact>
+                <cbc:Name>Pedro Sánchez</cbc:Name>
+                <cbc:Telephone>+34 612 345 678</cbc:Telephone>
+                <cbc:ElectronicMail>psanchez@ejemplo.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:AccountingCustomerParty>
+    
+    <cac:Delivery>
+        <cbc:ActualDeliveryDate>2026-05-07</cbc:ActualDeliveryDate>
+        <cac:DeliveryLocation>
+            <cac:Address>
+                <cbc:CityName>Murcia</cbc:CityName>
+                <cac:Country>
+                    <cbc:IdentificationCode>ES</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:Address>
+        </cac:DeliveryLocation>
+        <cac:DeliveryParty>
+            <cac:PartyName>
+                <cbc:Name>Pedro Sánchez</cbc:Name>
+            </cac:PartyName>
+        </cac:DeliveryParty>
+    </cac:Delivery>
+    
+    <cac:PaymentMeans>
+        <cbc:PaymentMeansCode name="mutually defined">ZZZ</cbc:PaymentMeansCode>
+        <cbc:PaymentID>INV/2026/00001</cbc:PaymentID>
+    </cac:PaymentMeans>
+    
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="USD">0.75</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cac:TaxableAmount currencyID="USD">5.00</cac:TaxableAmount>
+            <cbc:TaxAmount currencyID="USD">0.75</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>15.0</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="USD">5.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="USD">5.00</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="USD">5.75</cbc:TaxInclusiveAmount>
+        <cbc:PrepaidAmount currencyID="USD">0.00</cbc:PrepaidAmount>
+        <cbc:PayableAmount currencyID="USD">5.75</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    
+    <cac:InvoiceLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="C62">5.0</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="USD">5.00</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Description>Auriculares</cbc:Description>
+            <cbc:Name>Auriculares</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>15.0</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="USD">1.0</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    
+</Invoice>
